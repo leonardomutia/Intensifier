@@ -1,0 +1,975 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+</head>
+<link rel="stylesheet" type="text/css" href="forms1.css">
+<body onload="document.registration.userid.focus();">
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 		}
+		
+		.th {
+				column-span: 2;
+				align-content: left;
+				font-size: 15px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 10%;
+			float: left;
+			position: relative;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.links.a.active{ 	
+				background-color:#45a29e;
+				color: white;
+				position: relative;
+		}
+		.links {
+				color: black;
+				position: relative;
+				text-decoration: none;
+				font-size: 10.5px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#45a29e;
+			color: white;
+				text-decoration: none;
+
+		}
+		.logo1{
+ 		width: 400px;
+ 		height: 70px;
+ 	}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				
+
+			}
+		.th1:hover {
+			background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				text-decoration: none;
+				margin:0;
+				padding: 0;\
+				font-weight: bolder;
+			}
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:2px;
+		border-bottom: solid;
+		
+		border-color: gray;
+		font-family: sans-serif;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 16px;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("images/banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("images/banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 235px;
+	padding: 2px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 150px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(4) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(4):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(5) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(5):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+ 	
+
+
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 70vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 950px;
+	height: 2500px;
+	padding: 30px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 50px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+width: 400px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 3000px #1f2833;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+ .containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+
+
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 900px;
+	height: 700px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 800px #45a29e;
+
+}
+.container11 .box11:nth-child(2) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(2):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(3) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(3):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(4) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(4):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(5) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(5):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+
+
+
+
+
+
+
+.image
+{
+ 			position: relative;
+          width: 210px;
+          height: 200px;
+          border-radius: 30px;
+ 		padding: 5px;
+          float: left;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+.imageA
+{
+ 			position: relative;
+          width: 250px;
+          height: 200px;
+          border-radius: 30px;
+ 		padding: 5px;
+          float: left;
+          margin-left: 20%;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+
+.image1
+{
+ 			position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 30px;
+ 
+         margin-right: 30px;
+ 		padding: 20px;
+          float: left;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+   
+
+
+.body55{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 30vh;
+		 margin-top: 300px;
+	}
+	.container55{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+
+	}
+.container55 .box55{
+	position: relative;
+	width: 900px;
+	height: 400px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+
+}
+.container55 .box55:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container55 .box55 .icon55{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container55 .box55:nth-child(1) .icon55{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container55 .box55:nth-child(1):hover .icon55{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+
+.container55 .box55 .content55 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container55 .box55 .content55 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container55 .box55:hover .content55 {
+color: #fff;
+
+ 	}
+
+ 	.container55 .box55 .content55 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container55 .box55 .content55 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+.button1{ 
+	text-align: center;
+	font-size:20px;
+	font-family: sans-serif;
+
+ }
+.spectable{ 
+	text-align: center;
+	border: 10;
+	
+ }
+ .spectable1{ 
+	text-align: center;
+	border: 10;
+	margin-top:20px;
+	font-size:3	0px;
+ }
+ .model{ 
+ 	font-size: 20px;
+ 	font-family: sans-serif;
+ 	text-align:center;
+  }
+  .td1{ 
+  	width: 20px;
+   }
+
+</style>
+<body onload="document.registration.userid.focus();">
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="images/logo.png" class="logo1">
+			<td class="td"><center>
+				</td><center>
+			<th class="th"><a href="HOME.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+	<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption">
+				<h2>News (1)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>News (2)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				<h2>News (3)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					<br><a href="News.html#news3" class="th1">Read More</a></p>
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				<h2>News (1)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>News (2)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<form name="form1">
+
+<select name="dateofbirth" id = "bday">
+<option selected="" value="Month">Month</option>
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select>
+<select name="dateofbirth" id = "day">
+<option selected="" value="Day">Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<button class="button1" type="button" onclick="formdata()">Submit</button>
+</form>
+</body>
+<script>
+	
+function formdata() 
+{
+	
+
+
+var birthday= document.getElementById("bday").value;
+var birthday1= document.getElementById("day").value;
+
+
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><h1><br><center>REGISTRATION DETAILS</h1><br><center><body bgcolor='#bab2b5'><table bgcolor='#edc7b7' border='1px' width='570px'><tr><td align='left'><h3>The first name you entered is: </td><td align='center'><h2><font color='#45a29e'>" + birthday  +
+	"</td></tr><tr><td align='left'><h3>The Last name you entered is:</td><td align='center'><h2><font color='#45a29e'> " + birthday1);  +
+	"</td></tr><tr><td align='left'><h3>The Screen name you entered is: </td><td align='center'><h2><font color='#45a29e'>" + screenname +
+	"</td></tr><tr><td align='left'><h3>The Birthdate you entered is:&nbsp; </td><td align='center'><h2><font color='#45a29e'>" + birthday +"&nbsp;&nbsp;"+ birthday1 + ",&nbsp;&nbsp;" + birthday2 + 
+	"</td></tr><tr><td align='left'><h3>The Gender you entered is:</td><td align='center'><h2> <font color='#45a29e'>" + gender1 +
+	"</td></tr><tr><td align='left'><h3>The Country you entered is: </td><td align='center'><h2><font color='#45a29e'>" + country1 + 
+	"</td></tr><tr><td align='left'><h3>The Email  you entered is: </td><td align='center'><h2><font color='#45a29e'>" + email1 + 
+	"</td></tr><tr><td align='left'><h3>The Phone  you entered is: </td><td align='center'><h2><font color='#45a29e'>" + phone1 + 
+	"</td></tr><tr><td align='left'><h3>The Password  you entered is: </td><td align='center'><h2><font color='#45a29e'>" + password1 + 
+	"</td></tr><tr><td align='left'><h3>The Confirmation Password  you entered is:</td><td align='center'><h2> <font color='#45a29e'>" + password2 + "<br></td></tr></table>"
+	);
+
+
+
+}
+</script>
+</html>

@@ -1,0 +1,1149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+</head>
+<link rel="stylesheet" type="text/css" href="forms1.css">
+
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 		}
+		
+		.th {
+				column-span: 2;
+				align-content: left;
+				font-size: 15px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 10%;
+			float: left;
+			position: relative;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.links.a.active{ 	
+				background-color:#45a29e;
+				color: white;
+				position: relative;
+		}
+		.links {
+				color: black;
+				position: relative;
+				text-decoration: none;
+				font-size: 10.5px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#45a29e;
+			color: white;
+				text-decoration: none;
+
+		}
+		.logo1{
+ 		width: 400px;
+ 		height: 70px;
+ 	}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				
+
+			}
+		.th1:hover {
+			background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				text-decoration: none;
+				margin:0;
+				padding: 0;\
+				font-weight: bolder;
+			}
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:2px;
+		border-bottom: solid;
+		
+		border-color: gray;
+		font-family: sans-serif;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 16px;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("images/banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("images/banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 235px;
+	padding: 2px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 150px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(4) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(4):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(5) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(5):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+ 	
+
+
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 950px;
+	height: 1600px;
+	padding: 30px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 50px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+width: 400px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 3000px #1f2833;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+ .containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+
+
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 900px;
+	height: 720px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 800px #45a29e;
+
+}
+.container11 .box11:nth-child(2) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(2):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(3) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(3):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(4) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(4):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(5) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(5):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+
+
+
+
+
+
+
+.image
+{
+ 			position: relative;
+          width: 180px;
+          height: 200px;
+          border-radius: 30px;
+ 		padding: 5px;
+          float: left;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+.imageA
+{
+ 			position: relative;
+          width: 180px;
+          height: 200px;
+          border-radius: 30px;
+ 		padding: 5px;
+          float: left;
+          margin-left: 120px;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+
+.image1
+{
+ 			position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 30px;
+ 
+         	padding:5px;
+ 		
+          float: left;
+          font-size: 15px;
+          color: #FFFFFF;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+}
+   
+
+
+.body55{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 30vh;
+		 margin-top: 20px;
+	}
+	.container55{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+
+	}
+.container55 .box55{
+	position: relative;
+	width: 900px;
+	height: 700px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+
+}
+.container55 .box55:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container55 .box55 .icon55{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container55 .box55:nth-child(1) .icon55{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container55 .box55:nth-child(1):hover .icon55{
+box-shadow: 0 0 0 800px #45a29e;
+
+}
+
+.container55 .box55 .content55 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container55 .box55 .content55 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container55 .box55:hover .content55 {
+color: #fff;
+
+ 	}
+
+ 	.container55 .box55 .content55 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container55 .box55 .content55 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+.body56{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 30vh;
+		 margin-top: 50px;
+	}
+	.container56{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+
+	}
+.container56 .box56{
+	position: relative;
+	width: 900px;
+	height: 400px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+
+}
+.container56 .box56:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container56 .box56 .icon56{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container56 .box56:nth-child(1) .icon56{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container56 .box56:nth-child(1):hover .icon56{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+
+.container56 .box56 .content56 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container56 .box56 .content55 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container56 .box56:hover .content56 {
+color: #fff;
+
+ 	}
+
+ 	.container56 .box56 .content56 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container56 .box56 .content56 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+</style>
+<body onload="document.registration.userid.focus();">
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="images/logo.png" class="logo1">
+			<td class="td"><center>
+				</td><center>
+			<th class="th"><a href="Home.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+	<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption">
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				<h2>SHACMAN X3000 Cummins Tractor Strongly Landed in Cebu Market of Philippines</h2>
+				<p>Cebu in the Philippines is located in the center of the Visaya Islands and radiates to areas such as Iroylo, Bacolod and Surigo and Kagayan in northern Mindanao. Apart from Manila, it is one of the most important choices for local and surrounding customers to buy heavy duty vehicles.
+					<br><a href="News.html#news3" class="th1">Read More</a></p>
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="bodyA">
+<div class="containerA">
+		<div class="boxA">
+		<div class="iconA" >PRODUCTS</div>
+				<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="sales">XCMG</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Largest China Construction Machinery Company. XCMG is a 100% State-owned group, which has a public subsidiary listed in Shanghai Stock Exchange.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xuzhou Construction Machinery Group Co., Ltd. (XCMG), consisting of 26 factories and more than 20,000 employees, has been the largest construction machinery manufacturer in China since it was merged and founded in 1989.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				It is featured with successful international co-operation marked with many Joint Ventures with the world famous enterprises of construction equipment, such as Caterpillar, Meritor and PAT, and transferring a lot technology from advanced countries in the past 23 years.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is well known for complete of construction machinery, including all terrain trucks cranes, truck cranes, crawler cranes, pick and carry cranes truck mounted cranes, compactors, finishers, loaders, mini-loaders, and backhoes, motor graders, excavators, concrete equipment's, drilling rigs, and aerial fire platforms.<center><a href="http://www.xcmg.com/en-ap/"target="_blank">View Site</a><br>
+				</p>
+				
+		 
+		 <div class="imageA"><IMG SRC = "images/xcmgA.jpg" class="image">
+		 	<h3><font color="black">NXG4250N5KC</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemA">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="NXG4180D4KA<br><br>T type<br><br>4x2<br><br>2500<br><br>3080,3330,3620<br><br>95<br><br>6900<br><br>17995<br><br>34900<br><br>WP10.270E40<br><br>9JS135<br><br>6.5T/7.5T<br><br>4.11<br><br>280<br><br>400<br><br>12.002R20 315.80R22.5">NXG4180D4KA</option>
+<option value="NXG4160D4ZA<br><br>Z Type<br><br>4x2<br><br>2495<br><br>3250,3065<br><br>80,90<br><br>5910<br><br>15995<br><br>28295,33890<br><br>YC6A240-46<br><br>8JS85F<br><br>4.5<br><br>4,875/4.44<br><br>280<br><br>300 aluminum<br><br>10.00R20">NXG4160D4ZA</option>
+</select>
+<button class="button1" type="button" onclick="formdata()">Compare</button>
+</form>
+
+		 </div>
+		 <div class="image"><IMG SRC = "images/xcmgB.jpg" class="image">
+		 		<h3><font color="black">NXG4180D4KA</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemB">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="NXG4250N5KC<br><br>T Type<br><br>6x4<br><br>2500<br><br>3340,3600<br><br>80,95<br><br>9500<br><br>25000<br><br>37970<br><br>WP10NG336E59<br><br>12JSD160T<br><br>7.5T<br><br>4.38<br><br>280<br><br>450 dual<br><br>12.00R2/12R22.5">NXG4250N5KC</option>
+<option value="NXG4160D4ZA<br><br>Z Type<br><br>4x2<br><br>2495<br><br>3250,3065<br><br>80,90<br><br>5910<br><br>15995<br><br>28295,33890<br><br>YC6A240-46<br><br>8JS85F<br><br>4.5<br><br>4,875/4.44<br><br>280<br><br>300 aluminum<br><br>10.00R20">NXG4160D4ZA</option>
+</select>
+<button class="button1" type="button" onclick="formdata1()">Compare</button>
+</form>
+
+		 	</div>
+		 <div class="image"><IMG SRC = "images/xcmgC.jpg" class="image">
+		 		<h3><font color="black">NXG4160D4ZA</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemC">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="NXG4250N5KC<br><br>T Type<br><br>6x4<br><br>2500<br><br>3340,3600<br><br>80,95<br><br>9500<br><br>25000<br><br>37970<br><br>WP10NG336E59<br><br>12JSD160T<br><br>7.5T<br><br>4.38<br><br>280<br><br>450 dual<br><br>12.00R2/12R22.5">NXG4250N5KC</option>
+<option value="NXG4180D4KA<br><br>T type<br><br>4x2<br><br>2500<br><br>3080,3330,3620<br><br>95<br><br>6900<br><br>17995<br><br>34900<br><br>WP10.270E40<br><br>9JS135<br><br>6.5T/7.5T<br><br>4.11<br><br>280<br><br>400<br><br>12.002R20 315.80R22.5">NXG4180D4KA</option>
+</select>
+<button class="button1" type="button" onclick="formdata2()">Compare</button>
+</form></div>
+			</div>
+			</div>
+			</div>
+		</div>
+				<div class="body55">
+				<div class="container55">
+				<div class="box55">	
+				<div class="icon55">SHACMAN</div>
+				<div class="content55">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upholding our business philosophy of "Renown with Virtues, Leading by Service, Success with Quality", we will continue, together with customers, to build a highly efficient, win-win industrial chain ecosystem and become a world leading service oriented automobile group.<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shaanxi Automobile Holding Group was founded as Shaanxi Automobile Manufacturing Plant in 1968. It is currently located in the city of Xi'an, Shaanxi Provence employs over 32,000 personnel, with over 38.4 billion Yuan in total assets. The group is consisted of Shaanxi Automobile Group Co., Ltd and Shaanxi Automobile Industrial Co., Ltd as the two main subsidiaries. We design and manufacture a wide range of products including military off-road vehicles, heavy-duty trucks, medium and light trucks, medium and large coach buses, mini vehicles, mini vehicle axles, Cummins engines, heavy-duty axles and various vehicle components. The "Yanan" brand military truck researched and developed was a centerpiece at the 35th, 50th and 60th national day parade, making us the only designated production base for domestic military off-road vehicles as well as the first automobile export base enterprise.
+				<center><a href="http://www.shacman.com/"target="_blank">View Site</a>
+				</p>
+				<div class="imageA"><IMG SRC = "images/shacmanA.png" class="image">
+		 	<h3><font color="black">X3000</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemA1">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="F3000<br><br>4x2,6x4<br><br>Lengthened high roof(N)<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F9, F10, F12, F16 Series<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 Ton (Drum)<br><br>13 Ton Man Double Reduction,Stage Casting<br><br>Multi Leaf Springs Few Leaf Springs<br><br>400 Liter  with optional 600 Liter Aluminum <br><br>12.00R22.5, 11.00R22.5<br><br>Enhanced 90 saddle">F3000</option>
+<option value="M3000<br><br>4×2,6×4<br><br>Lengthened high roof(G)<br><br>Weichai power WP6, WP7, WP10, WP12
+Cummins ISM series<br><br>Euro II, III, IV, V<br><br>FAST F9, F10, F12 series<br><br>ETONФ430 diaphragm imported 
+or Chinese manufactured<br><br>7.5 ton MAN (drum)<br><br>13 ton MAN double reduction 
+with optional 13 ton MAN single reduction<br><br>Multi leaf springs with optional few leaf spring config.<br><br>300 / 400 / 600 liter aluminum<br><br>12.00R22.5, 11.00R22.5<br><br>lightweight 90 saddle">M3000</option>
+</select>
+<button class="button1" type="button" onclick="formdata4()">Compare</button>
+</form>
+
+		 </div>
+		 <div class="image"><IMG SRC = "images/shacmanB.png" class="image">
+		 	<h3><font color="black">F3000</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemA2">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="X3000<br><br>4x2,6x4<br><br>Lengthened high roof<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F10, F12, F16 Transmission<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 ton<br><br>13 Ton Man Double Reduction, Double Casting<br><br>Multiple Leaf Spring Config.<br><br>400 Liter/ 600 Liter Aluminum<br><br>12.00R20, 11.00R20<br><br>Regular 90 Saddle">X3000</option>
+<option value="M3000<br><br>4×2,6×4<br><br>Lengthened high roof(G)<br><br>Weichai power WP6, WP7, WP10, WP12
+Cummins ISM series<br><br>Euro II, III, IV, V<br><br>FAST F9, F10, F12 series<br><br>ETONФ430 diaphragm imported 
+or Chinese manufactured<br><br>7.5 ton MAN (drum)<br><br>13 ton MAN double reduction 
+with optional 13 ton MAN single reduction<br><br>Multi leaf springs with optional few leaf spring config.<br><br>300 / 400 / 600 liter aluminum<br><br>12.00R22.5, 11.00R22.5<br><br>lightweight 90 saddle">M3000</option>
+</select>
+<button class="button1" type="button" onclick="formdata5()">Compare</button>
+</form>
+
+		 </div>
+		  <div class="image"><IMG SRC = "images/shacmanC.png" class="image">
+		 	<h3><font color="black">M3000</h3>
+<form name="form1">
+<select name="dateofbirth" id = "ItemA3">
+<option selected="" value="NONE">Select Product to Compare</option>
+<option value="X3000<br><br>4x2,6x4<br><br>Lengthened high roof<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F10, F12, F16 Transmission<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 ton<br><br>13 Ton Man Double Reduction, Double Casting<br><br>Multiple Leaf Spring Config.<br><br>400 Liter/ 600 Liter Aluminum<br><br>12.00R20, 11.00R20<br><br>Regular 90 Saddle">X3000</option>
+<option value="F3000<br><br>4x2,6x4<br><br>Lengthened high roof(N)<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F9, F10, F12, F16 Series<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 Ton (Drum)<br><br>13 Ton Man Double Reduction,Stage Casting<br><br>Multi Leaf Springs Few Leaf Springs<br><br>400 Liter  with optional 600 Liter Aluminum <br><br>12.00R22.5, 11.00R22.5<br><br>Enhanced 90 saddle">F3000</option>
+</select>
+<button class="button1" type="button" onclick="formdata6()">Compare</button>
+</form>
+
+		 </div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		
+		 
+</div>
+</div>
+
+
+</body>
+<script>
+	
+function formdata() 
+{
+	
+var ItemAA = document.getElementById("ItemA").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='570px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr>"+
+	"<tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Cab<br><br><b>Drive<br><br>Width<br><br>Height<br><br>Maximum Speed<br><br>Kerb Mass<br><br>Gross Mass<br><br>Rated contained mass<br><br>Engine<br><br>Transmission<br><br>Front Axle<br><br>Gear Ratio<br><br>Frame<br><br>Fuel tank<br><br>Tyre</td><td><center>NXG4250N5KC<br><br>T Type<br><br>6x4<br><br>2500<br><br>3340,3600<br><br>80,95<br><br>9500<br><br>25000<br><br>37970<br><br>WP10NG336E59<br><br>12JSD160T<br><br>7.5T<br><br>4.38<br><br>280<br><br>450 dual<br><br>12.00R2/12R22.5</td><td><center>"+ ItemAA+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemA'><option selected='' value='NONE'>Select Product to Compare</option><option value='NXG4180D4KA<br><br>T type<br><br>4x2<br><br>2500<br><br>3080,3330,3620<br><br>95<br><br>6900<br><br>17995<br><br>34900<br><br>WP10.270E40<br><br>9JS135<br><br>6.5T/7.5T<br><br>4.11<br><br>280<br><br>400<br><br>12.002R20 315.80R22.5'>NXG4180D4KA</option><option value='NXG4160D4ZA<br><br>Z Type<br><br>4x2<br><br>2495<br><br>3250,3065<br><br>80,90<br><br>5910<br><br>15995<br><br>28295,33890<br><br>YC6A240-46<br><br>8JS85F<br><br>4.5<br><br>4,875/4.44<br><br>280<br><br>300 aluminum<br><br>10.00R20'>NXG4160D4ZA</option></select><button class='button1' type='button' onclick='formdata()'>Compare</button></td></tr></table>");
+
+}
+function formdata1() 
+{
+	
+var ItemBB = document.getElementById("ItemB").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='570px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr>"+
+	"<tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Cab<br><br><b>Drive<br><br>Width<br><br>Height<br><br>Maximum Speed<br><br>Kerb Mass<br><br>Gross Mass<br><br>Rated contained mass<br><br>Engine<br><br>Transmission<br><br>Front Axle<br><br>Gear Ratio<br><br>Frame<br><br>Fuel tank<br><br>Tyre</td><td><center>XG4180D4KA<br><br>T type<br><br>4x2<br><br>2500<br><br>3080,3330,3620<br><br>95<br><br>6900<br><br>17995<br><br>34900<br><br>WP10.270E40<br><br>9JS135<br><br>6.5T/7.5T<br><br>4.11<br><br>280<br><br>400<br><br>12.002R20 315.80R22.5</td><td><center>"+ ItemBB+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemB'><option selected='' value='NONE'>Select Product to Compare</option><option value='NXG4250N5KC<br><br>T Type<br><br>6x4<br><br>2500<br><br>3340,3600<br><br>80,95<br><br>9500<br><br>25000<br><br>37970<br><br>WP10NG336E59<br><br>12JSD160T<br><br>7.5T<br><br>4.38<br><br>280<br><br>450 dual<br><br>12.00R2/12R22.5'>NXG4250N5KC</option><option value='NXG4160D4ZA<br><br>Z Type<br><br>4x2<br><br>2495<br><br>3250,3065<br><br>80,90<br><br>5910<br><br>15995<br><br>28295,33890<br><br>YC6A240-46<br><br>8JS85F<br><br>4.5<br><br>4,875/4.44<br><br>280<br><br>300 aluminum<br><br>10.00R20'>NXG4160D4ZA</option></select><button class='button1' type='button' onclick='formdata1()'>Compare</button></td></tr></table>");
+
+}
+function formdata2() 
+{
+	
+var ItemCC = document.getElementById("ItemC").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='570px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr>"+
+	"<tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Cab<br><br><b>Drive<br><br>Width<br><br>Height<br><br>Maximum Speed<br><br>Kerb Mass<br><br>Gross Mass<br><br>Rated contained mass<br><br>Engine<br><br>Transmission<br><br>Front Axle<br><br>Gear Ratio<br><br>Frame<br><br>Fuel tank<br><br>Tyre</td><td><center>NXG4160D4ZA<br><br>Z Type<br><br>4x2<br><br>2495<br><br>3250,3065<br><br>80,90<br><br>5910<br><br>15995<br><br>28295,33890<br><br>YC6A240-46<br><br>8JS85F<br><br>4.5<br><br>4,875/4.44<br><br>280<br><br>300 aluminum<br><br>10.00R20</td><td><center>"+ ItemCC+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemC'><option selected='' value='NONE'>Select Product to Compare</option><option value='NXG4250N5KC<br><br>T Type<br><br>6x4<br><br>2500<br><br>3340,3600<br><br>80,95<br><br>9500<br><br>25000<br><br>37970<br><br>WP10NG336E59<br><br>12JSD160T<br><br>7.5T<br><br>4.38<br><br>280<br><br>450 dual<br><br>12.00R2/12R22.5'>NXG4250N5KC</option><option value='NXG4180D4KA<br><br>T type<br><br>4x2<br><br>2500<br><br>3080,3330,3620<br><br>95<br><br>6900<br><br>17995<br><br>34900<br><br>WP10.270E40<br><br>9JS135<br><br>6.5T/7.5T<br><br>4.11<br><br>280<br><br>400<br><br>12.002R20 315.80R22.5'>NXG4180D4KA</option></select><button class='button1' type='button' onclick='formdata2()'>Compare</button></td></tr></table>");
+
+}
+function formdata4() 
+{
+	
+var ItemAA1 = document.getElementById("ItemA1").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='990px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr>"+
+	"<tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Drive Type<br><br>Cabin<br><br><b>Engine<br><br>Emission Level<br><br>Transmission<br><br>Clutch<br><br>Front Axle<br><br>Rear Axle<br><br>Suspension<br><br>Fuel Tank<br><br>Tires<br><br>The Fifth Wheel</td><td><center>X3000<br><br>4x2,6x4<br><br>Lengthened high roof<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F10, F12, F16 Transmission<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 ton<br><br>13 Ton Man Double Reduction, Double Casting<br><br>Multiple Leaf Spring Config.<br><br>400 Liter/ 600 Liter Aluminum<br><br>12.00R20, 11.00R20<br><br>Regular 90 Saddle</td><td><center>"+ ItemAA1+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemA1'><option selected='' value='NONE'>Select Product to Compare</option><option value='F3000<br><br>4x2,6x4<br><br>Lengthened high roof(N)<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F9, F10, F12, F16 Series<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 Ton (Drum)<br><br>13 Ton Man Double Reduction,Stage Casting<br><br>Multi Leaf Springs Few Leaf Springs<br><br>400 Liter  with optional 600 Liter Aluminum <br><br>12.00R22.5, 11.00R22.5<br><br>Enhanced 90 saddle'>F3000</option><option value='M3000<br><br>4×2,6×4<br><br>Lengthened high roof(G)<br><br>Weichai power WP6, WP7, WP10, WP12 Cummins ISM series<br><br>Euro II, III, IV, V<br><br>FAST F9, F10, F12 series<br><br>ETONФ430 diaphragm imported or Chinese manufactured<br><br>7.5 ton MAN (drum)<br><br>13 ton MAN double reduction with optional 13 ton MAN single reduction<br><br>Multi leaf springs with optional few leaf spring config.<br><br>300 / 400 / 600 liter aluminum<br><br>12.00R22.5, 11.00R22.5<br><br>lightweight 90 saddle'>M3000</option></select><button class='button1' type='button' onclick='formdata4()'>Compare</button></td></tr></table>");
+
+}
+function formdata5() 
+{
+	
+var ItemAA2 = document.getElementById("ItemA2").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='990px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr><tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Drive Type<br><br>Cabin<br><br><b>Engine<br><br>Emission Level<br><br>Transmission<br><br>Clutch<br><br>Front Axle<br><br>Rear Axle<br><br>Suspension<br><br>Fuel Tank<br><br>Tires<br><br>The Fifth Wheel</td><td><center>F3000<br><br>4x2,6x4<br><br>Lengthened high roof(N)<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F9, F10, F12, F16 Series<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 Ton (Drum)<br><br>13 Ton Man Double Reduction,Stage Casting<br><br>Multi Leaf Springs Few Leaf Springs<br><br>400 Liter  with optional 600 Liter Aluminum <br><br>12.00R22.5, 11.00R22.5<br><br>Enhanced 90 saddle</td><td><center>"+ ItemAA2+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemA2'><option selected='' value='NONE'>Select Product to Compare</option><option value='X3000<br><br>4x2,6x4<br><br>Lengthened high roof<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F10, F12, F16 Transmission<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 ton<br><br>13 Ton Man Double Reduction, Double Casting<br><br>Multiple Leaf Spring Config.<br><br>400 Liter/ 600 Liter Aluminum<br><br>12.00R20, 11.00R20<br><br>Regular 90 Saddle'>X3000</option><option value='M3000<br><br>4×2,6×4<br><br>Lengthened high roof(G)<br><br>Weichai power WP6, WP7, WP10, WP12 Cummins ISM series<br><br>Euro II, III, IV, V<br><br>FAST F9, F10, F12 series<br><br>ETONФ430 diaphragm imported or Chinese manufactured<br><br>7.5 ton MAN (drum)<br><br>13 ton MAN double reduction with optional 13 ton MAN single reduction<br><br>Multi leaf springs with optional few leaf spring config.<br><br>300 / 400 / 600 liter aluminum<br><br>12.00R22.5, 11.00R22.5<br><br>light weight 90 saddle'>M3000</option></select><button class='button1' type='button' onclick='formdata5()'>Compare</button></td></tr></table>");
+
+}
+function formdata6() 
+{
+	
+var ItemAA3 = document.getElementById("ItemA3").value;
+
+document.writeln("<link rel='stylesheet' type='text/css' href='forms1.css'><br><center><body bgcolor='#bab2b5'><table bgcolor='#F0F8FF' border='1px' width='990px'><tr><td colspan='3' align='center' align='left'><h3><b><Br>COMPARISON</td></tr>"+
+	"<tr><td><b><center><font color='#45a29e'>Specification</td><td><center><b><font color='#45a29e'>PRODUCT A</td><td><b><center><font color='#45a29e'>PRODUCT B</td></tr><tr><td width='200px'><b>Vehicle Model<br><br>Drive Type<br><br>Cabin<br><br><b>Engine<br><br>Emission Level<br><br>Transmission<br><br>Clutch<br><br>Front Axle<br><br>Rear Axle<br><br>Suspension<br><br>Fuel Tank<br><br>Tires<br><br>The Fifth Wheel</td><td><center>M3000<br><br>4×2,6×4<br><br>Lengthened high roof(G)<br><br>Weichai power WP6, WP7, WP10, WP12Cummins ISM series<br><br>Euro II, III, IV, V<br><br>FAST F9, F10, F12 series<br><br>ETONФ430 diaphragm imported or Chinese manufactured<br><br>7.5 ton MAN (drum)<br><br>13 ton MAN double reduction with optional 13 ton MAN single reduction<br><br>Multi leaf springs with optional few leaf spring config.<br><br>300 / 400 / 600 liter aluminum<br><br>12.00R22.5, 11.00R22.5<br><br>lightweight 90 saddle</td><td><center>"+ ItemAA3+"</td></tr><tr><td colspan='3'><center><select name='dateofbirth' id = 'ItemA3'><option selected='' value='NONE'>Select Product to Compare</option><option value='X3000<br><br>4x2,6x4<br><br>Lengthened high roof<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F10, F12, F16 Transmission<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 ton<br><br>13 Ton Man Double Reduction, Double Casting<br><br>Multiple Leaf Spring Config.<br><br>400 Liter/ 600 Liter Aluminum<br><br>12.00R20, 11.00R20<br><br>Regular 90 Saddle'>X3000</option><option value='F3000<br><br>4x2,6x4<br><br>Lengthened high roof(N)<br><br>Weichai WP10 WP12 W13; Cummmins ISM Series<br><br>EURO II, III, IV, V<br><br>FAST F9, F10, F12, F16 Series<br><br>ETON0430 diaphram imported<br><br>MAN 7.5 Ton (Drum)<br><br>13 Ton Man Double Reduction,Stage Casting<br><br>Multi Leaf Springs Few Leaf Springs<br><br>400 Liter  with optional 600 Liter Aluminum <br><br>12.00R22.5, 11.00R22.5<br><br>Enhanced 90 saddle'>F3000</option></select><button class='button1' type='button' onclick='formdata6()'>Compare</button></td></tr></table>");
+
+}
+</script>
+</html>

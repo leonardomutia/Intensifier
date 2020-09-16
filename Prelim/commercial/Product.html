@@ -1,0 +1,935 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services</title>
+</head>
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 		}
+		
+		.th {
+				column-span: 2;
+				align-content: left;
+				font-size: 15px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 17%;
+			float: left;
+			position: relative;
+			margin-left: 100px;
+			margin-top: 10px;
+		
+		}
+		.links.a.active{ 	
+				background-color:#45a29e;
+				color: white;
+				position: relative;
+		}
+		.links {
+				color: black;
+				position: relative;
+				text-decoration: none;
+				font-size: 14px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#45a29e;
+			color: white;
+
+		}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				font-weight: bolder;
+
+			}
+		.th1:hover {
+			background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				text-decoration: underline;
+				margin:0;
+				padding: 0;\
+				font-weight: bolder;
+			}
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:2px;
+		border-bottom: solid;
+		
+		border-color: gray;
+		font-family: sans-serif;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 30px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 18px;
+	}
+	.container .slider .slide.slide1{
+		background: url("banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 235px;
+	padding: 2px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 150px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(4) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(4):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(5) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(5):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+ 	.image{
+ 		width: 300px;
+ 		height: 200px;
+ 		position: relative;
+ 		z-index: 1;
+	transition: 0.5s;
+ 	}
+
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 70vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 1200px;
+	height: 1700px;
+	padding: 30px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10%;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+width: 400px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 1680px #1f2833;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+ .containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+
+
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 1100px;
+	height: 300px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 150px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 25px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+.container11 .box11:nth-child(2) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(2):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(3) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(3):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(4) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(4):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(5) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(5):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+.space{
+        height: 50px;
+        width: 500px;
+        font-size: 40px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin-top: 20px;
+        font-family: Harrington;
+        color: #000000;
+        float: left;
+        align-content: center;
+        font-weight: bolder;
+        letter-spacing: 20px;
+        text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+        background-color: #50c9c3;
+        
+        border-top: solid;
+        border-bottom: solid;
+        border-left: solid;
+        border-right: solid;
+        border-color: pink;
+        border-top-right-radius: 200px;
+        border-top-left-radius: 200px;
+
+
+      }
+      .ul{
+  position: absolute;
+  top: 340px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #e2d1c3;
+  margin: 0;
+  padding: 0;
+
+ }
+ 
+ .ul .li{
+  list-style:none;
+  position: relative;
+  width: 20%;
+  height: 550px;
+  border-right: 3px solid pink;
+  float: left;
+  box-sizing: border-box;
+  transition: 0.5s;
+  text-align:center;
+ }
+ .ul:hover .li{
+  width: 10%;
+ }
+ 
+ .ul .li:hover{
+  width: 60%;
+}
+ .ul .li .contentt{
+  font-family: Times New Roman;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #FFF;
+  opacity: 1;
+ 
+
+ }
+ .contentt:hover{
+    background-color: #50c9c3;
+ }
+ .ul .li:hover .contentt{
+  bottom: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 1;
+  
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+ }
+ .ul .li:nth-child(1){
+  background-size: cover;
+  background-position: left;
+  background: url("v3.jpg");
+  background-repeat: no-repeat;
+  align-content: center;
+  border-top: solid;
+  border-color: pink;
+  border-top-right-radius: 20px;
+  
+ }
+ .ul .li:nth-child(2){
+  background-size: cover;
+  background-position: left;
+  background: url("v1.jpg");
+  background-repeat: no-repeat;
+  align-content: center;
+  border-top: solid;
+  border-color: pink;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+ }
+ .ul .li:nth-child(3){
+  background-size: cover;
+  background-position: left;
+  background: url("v2.jpg");
+  background-repeat: no-repeat;
+  align-content: center;
+  border-top: solid;
+  border-color: pink;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+ }
+ .ul .li:nth-child(4){
+  background-size: cover;
+  background-position: left;
+  background: url("v4.jpg");
+  background-repeat: no-repeat;
+  align-content: center;
+  border-top: solid;
+  border-color: pink;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+ }
+ .ul .li:nth-child(5){
+  background-size: cover;
+  background-position: bottom;
+  background: url("v5.jpg");
+  background-repeat: no-repeat;
+  align-content: center;
+  border-top: solid;
+  border-color: pink;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+ }
+
+
+</style>
+<body>
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="logo.png">
+			<td class="td"><center>
+				</td><center>
+			<th class="th"><a href="HOME.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+	<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption">
+				<h2>News (1)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>News (2)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				<h2>News (3)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					<br><a href="News.html#news3" class="th1">Read More</a></p>
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				<h2>News (1)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>News (2)</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="bodyA">
+<div class="containerA">
+		<div class="boxA">
+		<div class="iconA" >SERVICES OFFERED</div>	
+				<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="sales">SALES</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<div class="space">Places</div>
+ <ul class="ul">
+   <li class="li">
+    <div class="content">
+      <h2><center>Calle Crisologo, Vigan</center></h2>
+         The most famous and major tourist magnet in Vigan, Calle Crisologo is full of Spanish-styled houses<br>that gives people of this generation a glimpse of the Spanish era. This street also features the prosperous lifestyle <br>of the said era because of the Manila-Acapulco trade.
+</div>
+   </li>
+   <li class="li"><div class="content">
+      <h2><center>Island Souvinir, Vigan</center></h2>
+         It is the only town during World War II that was saved from destruction because of a love story.<Br>
+Legend has it that a Japanese General, who married a Filipina in Vigan, promised the parish priest<Br> that he would save the town from destruction from the retreating Japanese if he would agree to take care of his family.
+</div>
+</li>
+   <li class="li">
+    <div class="content">
+      <h2><center>Hotel Luna, Vigan</center></h2>
+         The first and only museum hotel in the Philippines managed by Artstream Hospitality Management Group Inc.<br>It is conveniently located at the at the heart of the Heritage Village in Vigan City,<br> which is just a block away from Crisologo street.
+</div>
+</li>
+   <li class="li">
+     <div class="content">
+      <h2><center>Cafe Leona, Vigan</center></h2>
+         Its eccentricity lies in their serving of a fusion of Filipino, Japanese, and Italian cuisine, therefore catering to both expats and locals with their extensive menu
+</div>
+   </li>
+   <li class="li">
+     <div class="content">
+      <h2><center> Irene's Empanada, Vigan</center></h2>
+         (If you are coming from Cafe Leona, walk along Calle Crisologo and turn left at Calle Salcedo. You should see it on your left after the corner of Calle V. de los Reyes with Gordion Hotel as the landmark and after Insiang's empanadahan.)
+</div>
+   </li>
+ </ul>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="parts">PARTS</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="tech">TECH</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11"id="repair">REPAIR</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="service">SERVICE</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+</div>
+</div>
+</body>
+</html>

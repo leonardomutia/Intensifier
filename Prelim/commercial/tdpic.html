@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WELCOME PAGE!</title>
+</head>
+<style>
+	  body {
+        background-color: #e2d1c3;
+      }
+  	.div1 {
+  		margin-left: 32%;
+ 		font-family: Harrington;
+ 		font-size: 40px;
+ 		color: #000000;
+ 		text-align: center;
+ 		position: relative;
+ 		width: 550px;
+ 		text-align: center;
+ 		background-color: #50c9c3;
+ 		float: left;
+ 		position: relative;
+ 		border-bottom-right-radius: 300px;
+ 		border-bottom-left-radius: 300px;
+ 		border-top-right-radius: 300px;
+ 		border-top-left-radius: 300px;
+
+  	}
+  	.div2{
+      align-content: center;
+     margin-left: 4%;
+    font-family: Harrington;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    width: 1150px;
+    height: 100px;
+    text-align: center;
+    background-color: #50c9c3;
+    float: left;
+    position: relative;
+    word-spacing: 5px;
+    text-align: center;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+ border-bottom: solid;
+ border-left: solid;
+ border-right: solid;
+  border-color: pink;
+  border-width: 5px;
+  }
+  .div3{
+      align-content: center;
+     margin-left: 30%;
+    font-family: Harrington;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    background-color: #50c9c3;
+    float: left;
+    position: relative;
+   font-weight: bolder;
+   letter-spacing: 10px;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: 5px;
+  border-color: pink;
+    border-top-right-radius: 300px;
+    border-top-left-radius: 300px;
+
+  }
+  	.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltipimage{
+	width: 50px;
+	height: 40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.blinking{
+    animation:blinkingText1 8s infinite;
+    
+    font-family: Harrington;
+ 		font-size: 45px;
+ 		color: #D1D7E0;
+ 		font-weight: bolder;
+ 		text-shadow: 5px 1px 15px #222;
+		float: left;
+ 		position: relative;
+ 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.blinking2{
+    animation:blinkingText 8s infinite;
+    text-decoration: none;
+    font-family: Harrington;
+ 		font-size: 60px;
+ 		color: #D1D7E0;
+ 		font-weight: bolder;
+ 		text-shadow: 5px 1px 15px #222;
+ 	float: left;
+ 		position: relative;
+ 		text-align: left;
+ 		margin-left: 25%;
+ 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.blinking3{
+    animation:blinkingText 8s infinite;
+    text-decoration: none;
+    font-family: Harrington;
+ 		font-size: 60px;
+ 		color: #D1D7E0;
+ 		font-weight: bolder;
+ 		text-shadow: 5px 1px 15px #222;
+ 		position: relative;
+ 		float: left;
+ 		text-align: right;
+ 		align-content: right;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@keyframes blinkingText{
+    0%{     color: #FFFFFF;  }
+    49%{    color: pink; }
+    50%{    color: #FFFFFF; }
+    99%{    color:pink;  }
+    100%{   color: #FFFFFF;    }
+}
+@keyframes blinkingText1{
+    0%{     color: #000000;  }
+    49%{    color: #FFFFFF; }
+    50%{    color: #FFFFFF; }
+    99%{    color:#FFFFFF;  }
+    100%{   color: #000000;    }
+}
+ .container {
+  position: relative;
+  width: 100%;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 90%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+    position: relative;
+}
+.image:hover {
+	transition: 8s;
+    position: relative;
+    content: url("welcomeBG.jpg");
+    width: 90%;
+  height: auto;
+    border-style: solid;
+  border-color: pink;
+border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+transition-delay: 2s
+}
+.middle {
+
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.5;
+  transition-delay: 2s
+}
+
+.container:hover .middle {
+  opacity: 1;
+transition-delay: 2s
+
+}
+
+.text {
+  background-color: #50c9c3;
+  font-family: Harrington;
+   text-decoration: none;
+  color: white;
+  font-size: 50px;
+  padding: 16px 32px;
+  align-content: center;
+  text-align: center;
+  position: relative;
+ 
+border-bottom-right-radius: 300px;
+ 		border-bottom-left-radius: 300px;
+ 		border-top-right-radius: 300px;
+ 		border-top-left-radius: 300px;
+animation:blinkingText 8s infinite;
+text-shadow: 5px 1px 15px #000;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.text a {
+  background-color: #50c9c3;
+  font-family: Harrington;
+   text-decoration: none;
+  color: white;
+  font-size: 50px;
+  padding: 16px 32px;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 50%;
+border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-top-right-radius: 300px;
+    border-top-left-radius: 300px;
+animation:blinkingText 8s infinite;
+text-shadow: 5px 1px 15px #000;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+</style>
+<body>
+ <div class="blinking2">Welcome</div>
+ <div class="blinking">ToThe</div>
+ <div class="blinking3">Philippines!</div>
+<center>
+ <div class="container">
+          <IMG SRC = "hoverpic.png" class="image">
+            <div class="middle">
+        <div class="text"><a href="HOME.html" class="text">Explore!</a></div></div></div></center>
+     <div class="div3">DISCLAIMER</div>
+<div class="div2">The information contained on Philippine Tourism website is for general
+information purposes only. <br>Philippine Tourism assumes no responsibility<br>for errors or
+omissions in the contents on the Service.
+</div>
+
+</body>
+</html>

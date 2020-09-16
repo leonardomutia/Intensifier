@@ -1,0 +1,1061 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 		}
+		
+		.th {
+				column-span: 1;
+				align-content: left;
+				font-size: 12px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 10%;
+			float: left;
+			position: relative;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.links.a.active{ 	
+				background-color:#45a29e;
+				color: white;
+				position: relative;
+		}
+		.links {
+				color: black;
+				position: relative;
+				text-decoration: none;
+				font-size: 10.5px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#45a29e;
+			color: white;
+
+		}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				
+
+			}
+		.th1:hover {
+			background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				text-decoration: none;
+				margin:0;
+				padding: 0;\
+				font-weight: bolder;
+			}
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:2px;
+		border-bottom: solid;
+	
+		border-color: gray;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 16px;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("images/banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("images/banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #060c21;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 50vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 400px;
+	padding: 5px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 210px;
+height: 80px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 40px;
+font-weight: 700;
+transition: 1s;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #e91e63;
+background: #e91e63;
+}
+
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #e91e63;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #23e629;
+background: #23e629;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #23e629;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #2196f3;
+background: #2196f3;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #2196f3;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	.image{
+ 		width: 300px;
+ 		height: 200px;
+ 		position: relative;
+ 		z-index: 1;
+	transition: 0.5s;
+ 	}
+
+
+
+
+.bodyy{
+	 margin-top: 20px;
+	 padding: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 5vh;
+	 font-family: sans-serif;
+	 background: #F0F8FF;
+	 margin-bottom: 100px;
+}
+.containerr
+{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid;
+	border-color: #45a29e;
+}
+.containerr .boxx
+{
+	text-align: center;
+}
+.containerr .boxx .iconn .fa
+{
+	font-size: 30px;
+	cursor:	pointer;
+}
+
+.containerr .boxx .iconn h3,
+.containerr .boxx .iconn h4
+{
+position: relative;
+overflow: hidden;
+font-weight: 400; 
+margin:0;
+padding: 0px 5px;
+font-size: 16px;
+transition-delay: 0.3333s;
+color: transparent;
+}
+.containerr .boxx .fa:hover ~h3,
+.containerr .boxx .fa:hover ~h4
+{
+	color: #000;
+
+
+}
+.containerr .boxx .iconn h4
+{
+	font-weight: 600;
+	margin: 5px 0;
+	font-style: 30px;
+}
+.containerr .boxx .iconn h3:before,
+.containerr .boxx .iconn h4:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: #00bcd4;
+	transition: 1s;
+}
+.containerr .boxx .iconn h4:before
+{
+	left: initial;
+	right: 100%;
+	background: #9c27b0;
+}
+.containerr .boxx .fa:hover ~ h3:before
+{
+left: -100%;
+}
+.containerr .boxx .fa:hover ~ h4:before
+{
+	left: initial;
+	right: -100%;
+}
+ .special
+{
+	margin-top: 50px;
+	height: 80px;
+	text-align: center;
+	font-size: 30px;
+	background: #F0F8FF;
+	font-family: sans-serif;
+	font-weight: bolder;
+
+}
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 10vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 950px;
+	height: 900px;
+	padding: 10px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10%;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+width: 400px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20px;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 1660px #1f2833;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+.containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+
+
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 900px;
+	height: 350px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 550px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 22px;
+font-weight: 600;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+
+
+ 	
+ 	.body22{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 10vh;
+	}
+	.container22{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container22 .box22{
+	position: relative;
+	width: 900px;
+	height: 200px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container22 .box22:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container22 .box22 .icon22{
+position: relative;
+width: 550px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 22px;
+font-weight: 600;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container22 .box22:nth-child(1) .icon22{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container22 .box22:nth-child(1):hover .icon22{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+
+.container22 .box22 .content22 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container22 .box22 .content22 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container22 .box22:hover .content22 {
+color: #fff;
+
+ 	}
+
+ 	.container22 .box22 .content22 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container22 .box22 .content22 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+ 
+ 	.body33{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 10vh;
+	}
+	.container33{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container33 .box33{
+	position: relative;
+	width: 900px;
+	height: 200px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container33 .box33:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container33 .box33 .icon33{
+position: relative;
+width: 550px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 22px;
+font-weight: 600;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container33 .box33:nth-child(1) .icon33{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container33 .box33:nth-child(1):hover .icon33{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+
+.container33 .box33 .content33 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container33 .box33 .content33 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container33 .box33:hover .content33 {
+color: #fff;
+
+ 	}
+
+ 	.container33 .box33 .content33 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container33 .box33 .content33 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+ 	.logo1{
+ 		width: 400px;
+ 		height: 70px;
+ 	}
+#about{}
+</style>
+<body>
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="images/logo.png" class="logo1">
+			<td class="td"><center> 
+				</td><center>
+			<th class="th"><a href="Home.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html#about" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption">
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				<h2>SHACMAN X3000 Cummins Tractor Strongly Landed in Cebu Market of Philippines</h2>
+				<p>Cebu in the Philippines is located in the center of the Visaya Islands and radiates to areas such as Iroylo, Bacolod and Surigo and Kagayan in northern Mindanao. Apart from Manila, it is one of the most important choices for local and surrounding customers to buy heavy duty vehicles.
+					<br><a href="News.html#news3" class="th1">Read More</a></p>
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="bodyA">
+<div class="containerA">
+		<div class="boxA">
+		<div class="iconA">ABOUT OUR COMPANY</div>	
+				<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="about">HD MEGATRUCKS & EQUIPMENT, INC</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; was organized and registered with the Securities and Exchange Commission on March 12, 2013 with principal office located at No. 103 M. Francisco St., Brgy. Lingunan, Valenzuela City, Metro Manila, Philippines.
+				<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD MEGATRUCKS & EQUIPMENT, INC. is composed of young and aggressive Filipino incorporators who have financial capabilities and experienced in technical and know-how in parts and heavy equipment business. Our purpose is to engage in the business of trading and importing of goods such as automotive parts, accessories, equipment and heavy duty trucks. And we are aiming to help our customers to invest in long term machineries and equipment.
+				<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Company skilled employee firmly believes that our combined skills are the Best tools to earn the trust and confidence of our clients. We assured you of excellent after-sales support which is reliable and responsive to your needs.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body22">
+				<div class="container22">
+				<div class="box22">	
+				<div class="icon22" id="about">VISION</div>
+				<div class="content22">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HD Megatrucks and Equipment Inc., aims to lead and to be the Number 1 Distributor for Industry lines of Infrastructures, Constructions, Mining, supplying to Rentals, Warehousing, Trucking and Logistics of Heavy Trucks, Equipment and Material Handling in the entire Philippines.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body33">
+				<div class="container33">
+				<div class="box33">	
+				<div class="icon33" id="about">MISION</div>
+				<div class="content33">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To provide and give our Client's value for money invested, through Class A brand, good quality, competitive and service after sales support on every units and equipment's we served.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+</div>
+</div>
+
+	<div class="special" id="contact">CONTACT US</div>
+<div class="bodyy">
+<div class="containerr">
+	<div class="boxx">
+		<div class="iconn">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<h4> Address </h4>
+			<h3>103 M. Francisco St. Valenzuela City</h3>
+		</div>
+	</div>
+	<div class="boxx">
+		<div class="iconn">
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<h4> Telephone </h4>
+			<h3>401.4816</h3>
+		</div>
+	</div>
+	<div class="boxx">
+		<div class="iconn">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<h4> Email </h4>
+			<h3>hdmegatrucks@gmail.com</h3>
+		</div>
+	</div>
+	<div class="boxx">
+		<div class="iconn">
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<h4> Facebook </h4>
+			<h3>facebook.com/hdmegatrucks</h3>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

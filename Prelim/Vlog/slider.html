@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+			font-family: Harrington;
+		}
+		body{
+			background-color: #fcf9ea;
+			display: grid;
+			place-items: center;
+			height: 100vh;
+			transform: 1s all;
+		
+
+		}
+		.wrapper{
+			position: relative;
+			width: 510px;
+			height: 530px;
+			overflow: hidden;
+			box-shadow: 3px 2px 3px rgba(0,0,0,0.4);
+			color: rgb(160,236,241);
+			border-radius: 2%;
+		}
+		.container{
+			width: 510px;
+			height: 550px;
+			box-shadow: 0px 2px 4px #000;
+			background: #badfdb;
+			overflow:hidden;
+			border-radius: 2%;
+			z-index: 3;
+
+		}
+		nav{
+			position: absolute;
+			top:90%;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			border-top: 1px solid gainsboro;
+			z-index: 8;
+			background: #badfdb;
+			color: #f8a978;
+		}
+		nav a{
+			padding: 15px;
+			text-decoration: none;
+			color: #000;
+			font-size: 1.4rem;
+
+
+		}
+		nav a:hover{
+			padding: 10px;
+			text-decoration: none;
+			color:red ;
+			font-size: 1.4rem;
+
+
+		}
+		.link{
+
+			transition: 0.3s all;
+		}
+		.content{
+			display: flex;
+			width: 2040px;
+			height: 80%;
+
+		}
+		.item{
+			width: 100%;
+			color: #000;
+			background: #badfdb;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 10%;
+
+		}
+		.item h1{
+			font-size: 10px;
+			color: #ffd369;
+		}
+		.item i{
+			font-weight: bolder;
+			font-size: 75px;
+			color: #ffd369;
+		}
+		.item0 i{
+			color: rgb(243,118,160);
+		}
+		.item1 i{
+			color: rgb(243,118,160);
+		}
+		.item2 i{
+			color: rgb(146,146,228);
+		}
+		.item3 i{
+			color: rgb(245,233,67);
+		}
+		
+
+	
+
+		.images{
+			width: 500px;
+			height: 100%;
+			border-radius: 50%;
+			transition: 3s;
+		}
+		.images:hover{
+			border-radius: 1%
+
+		}
+		.images1{
+			width: 100%;
+			height: 500px;
+			border-radius: 50%;
+			transition: 3s;
+		}
+		.images1:hover{
+			border-radius: 1%
+
+		}
+		h1, h3{
+			color: #000;
+		}
+		h1:hover, h3:hover{
+			color: red;
+		}
+		h1 a:hover{
+			text-decoration: none;
+			color: red;
+		}
+		h1 a{
+			text-decoration: none;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<h1>INTENSIFIER</h1>
+	<h3>"Every Family has a Story... Welcome to ours..."</h3>
+	<div class="wrapper">
+		<div class="container">
+			<nav>
+				<a href="#author" class="link"><i class="fas fa-user"></i>Author</a>
+				<a href="#family" class="link"><i class="fas fa-users"></i>Family</a>
+				<a href="#albums" class="link"><i class="fas fa-images"></i>Albums</a>
+				<a href="#friends" class="link"><i class="fas fa-user-friends"></i>Friends</a>
+</nav>
+	<div class="content">
+		<div class="item item0" id="author">
+			
+			<a href="author.html"><img src="images/Author.jpg" class="images"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div> 
+		</div>
+		<div class="item item1" id="family">
+		
+			<a href="familymem.html"><img src="images/Family.jpg" class="images1"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div> 
+		</div>
+		<div class="item item2" id="albums">
+			
+			<a href="gallery.html"><img src="images/Album.jpg" class="images1"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<div class="item item3" id="friends">
+		
+			<a href="friends.html"><img src="images/Friends.jpg" class="images1"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+	</div>
+		</div>
+	</div>
+
+</body>
+</html>

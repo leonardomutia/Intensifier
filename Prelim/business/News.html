@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+</head>
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 		}
+		
+		.th {
+				column-span: 2;
+				align-content: left;
+				font-size: 15px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 17%;
+			float: left;
+			position: relative;
+			margin-left: 5px;
+			margin-top: 10px;
+		
+		}
+		.links.a.active{ 	
+				background-color:#45a29e;
+				color: white;
+				position: relative;
+		}
+		.links {
+				color: black;
+				position: relative;
+				text-decoration: none;
+				font-size: 10.5px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#45a29e;
+			color: white;
+
+		}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				font-weight: bolder;
+
+			}
+		.th1:hover {
+			background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				text-decoration: underline;
+				margin:0;
+				padding: 0;\
+				font-weight: bolder;
+			}
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:2px;
+		border-bottom: solid;
+		border-color: gray;
+		font-family: sans-serif;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 16px;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("images/banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("images/banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 235px;
+	padding: 2px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 150px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(4) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(4):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(5) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(5):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px #45a29e;
+ 	}
+ 	.image{
+ 		width: 300px;
+ 		height: 200px;
+ 		position: relative;
+ 		z-index: 1;
+	transition: 0.5s;
+ 	}
+
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 10vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 950px;
+	height: 1350px;
+	padding: 10px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10%;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+width: 400px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20px;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 1660px #1f2833;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+ .containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+
+
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 10vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 900px;
+	height: 400px;
+	padding: 20px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 600px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 20%;
+font-size: 15px;
+font-weight: 1000;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 600px #45a29e;
+
+}
+.container11 .box11:nth-child(2) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(2):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(3) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(3):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(4) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(4):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(5) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(5):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+margin-right: 20px;
+margin-left: 20px;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		font-size: 20px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+.logo1{
+ 		width: 400px;
+ 		height: 70px;
+ 	}
+#news1{}
+#news2{}
+#news3{}
+#news4{}
+
+</style>
+<body>
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="images/logo.png" class="logo1">
+			<td class="td"><center>
+				</td><center>
+			<th class="th"><a href="Home.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+	<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption" >
+				
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption" >
+				
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="bodyA">
+<div class="containerA">
+		<div class="boxA">
+		<div class="iconA">News & Events</div>	
+				<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11" id="news1">Celebrating the 70th anniversary of The People's Republic of China</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Since the beginning of the new century, as an important military off-road vehicle production base in China, SHACMAN has been devoting itself to the research of military vehicle demand, keeping in mind the national defense mission, following the requirements of equipment development, and has developed various types of vehicles, such as SX2153, SX2190N, SX2300. On September 3, 2015, in celebrating the 70th anniversary parade of the Chinese people's war of resistance against Japan and the world's anti fascist war, the SHACMAN SX2190N model carried DF-5B and other models of vehicle equipment appeared for the fourth time through Tiananmen Square.
+
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;In order to meet the needs of national defense development and actual combat of the army, SHACMAN actively went deep into the army, conducted field investigations and comprehensive tests, and developed military vehicles such as general tactical vehicles and logistical support vehicles adapted to modern warfare. On July 30, 2017, celebrating the People's Liberation Army 90th anniversary military parade, with its excellent product quality and diversified products, SHACMAN military trucks participated in its fifth military parade.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11"id="news2">Malaysia H3000 promotion(Title)</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;The H3000 heavy truck landing in Malaysia uses a new narrow cab, with Weichai WP12 engine, FAST 12 speed gearbox and Hande 16T rear axle. The industry's optimal power assembly ensures the high reliability and high power output of the vehicle while reducing fuel comsumption. The use of telescopic axle shift mechanism also increases the cab sealing, and the three-stage boarding pedal is more in line with ergonomics. At the same time, H3000 adopts hydraulic suspension, hydraulic seat and widened sleeper, which comprehensively improves the convenience and comfort of operation.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="body11">
+				<div class="container11">
+				<div class="box11">	
+				<div class="icon11"id="news3">SHACMAN X3000 Cummins Tractor Landed in Cebu Market of Ph.</div>
+				<div class="content11">
+				<center><h3> </h3></center>
+				<p>&nbsp;&nbsp;&nbsp;Cebu in the Philippines is located in the center of the Visaya Islands and radiates to areas such as Iroylo, Bacolod and Surigo and Kagayan in northern Mindanao. Apart from Manila, it is one of the most important choices for local and surrounding customers to buy heavy duty vehicles.
+				<br><Br>
+				&nbsp;&nbsp;&nbsp;Cebu has a long geographical area and many long-distance ports. Therefore, reliability, economy and comfort are the basic requirements of local customers. X3000 6x4 tractor with Tianxingjian system, Cummins 420 horsepower engine, Eton 13 gearbox, double reduction rear axle, cab widened sleeper, front and rear multi-leaf spring vehicle reinforced chassis. With its low fuel consumption, strong power, high comfort, easy operation characteristics the truck is very consistent with long-distance logistics transportation in Cebu area while also bring customers a high-end sense of intelligence.</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			
+		</div>
+</div>
+</div>
+</body>
+</html>

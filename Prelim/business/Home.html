@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+</head>
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+	body
+	{
+		background-color:  #F0F8FF;
+	}
+	table {
+ 				
+ 			width: 100%;	
+ 			position: relative;
+ 		}
+		
+		.th {
+				column-span: 1;
+				align-content: left;
+				font-size: 12px;
+				color:black;
+				position: relative;
+				background-color: #F0F8FF;
+		
+			}
+ 		
+		.th:hover {
+ 				color:white;
+				
+				position: relative;
+				}
+		.th:hover a {
+ 				color:white;
+				background-color:#45a29e;
+				position: relative;
+			
+
+				}
+			.td {
+			width: 10%;
+			float: left;
+			position: relative;
+			margin-left: 5px;
+			margin-top: 10px;
+		
+		}
+		.links.a.active{ 	
+				background-color:#474F5C;
+				color: white;
+				position: relative;
+				font-weight: bold;
+		}
+		.links {
+				color: black;
+				
+				position: relative;
+				text-decoration: none;
+				font-size: 10.5px;
+				font-family: Arial;
+				 transition: 0.3s;
+				margin-bottom: 15px;
+				background-color: #F0F8FF;
+		}
+			}
+		.links:hover {
+			font-family: Arial;
+			background-color:#474F5C;
+			color: white;
+			font-weight: bold;
+
+		}
+
+		.th1 {
+				background: transparent;
+			
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				
+				text-decoration: none
+			}
+		.th1:hover {
+				background: transparent;
+				font-size: 16px; 
+				color:red;
+				position: relative;
+				margin:0;
+				padding: 0;
+				text-decoration: none;
+			}
+
+	.body1{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+
+		
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 70vh;
+		border:5px;
+		border-bottom: solid;
+	
+		border-color: gray;
+		font-family: sans-serif;
+
+	}
+	.container .slider{
+		position: absolute;
+		top:0%;
+		left: 0;
+		width: 500%;
+		height: 100%;
+		animation: animate 15s linear infinite;
+
+	}
+	.container .slider .slide{
+		position: relative;
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	.container .slider .slide .caption{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,.4);
+	}
+	.container .slider .slide .caption:hover{
+		position: absolute;
+		bottom: 20px;
+		left: 60px;
+		right: 60px;
+		padding: 15px;
+		background: rgba(0,0,0,1);
+	}
+	.container .slider .slide .caption h2{
+		margin: 0 0 5px;
+		padding: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	.container .slider .slide .caption p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 16px;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+.container .slider .slide.slide2{
+		background: url("images/banner2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide3{
+		background: url("images/banner3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.container .slider .slide.slide1{
+		background: url("images/banner1.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+@keyframes animate
+{
+		0%{
+			left:0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left:-100%;
+		}
+		45%{
+			left:-100%;
+		}
+		50%{
+			left:-200%;
+		}
+		70%{
+			left:-200%;
+		}
+		75%{
+			left:-300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	}
+	.body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 50vh;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container1 .box{
+	position: relative;
+	width: 325px;
+	height: 390px;
+	padding: 5px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:1px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container1 .box:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container1 .box .icon{
+position: relative;
+width: 210px;
+height: 60px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20%;
+font-size: 40px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container1 .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+.container1 .box:nth-child(1):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(2) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(2):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box:nth-child(3) .icon{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container1 .box:nth-child(3):hover .icon{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container1 .box .content1 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+ .container1 .box:hover .content1 {
+color: #fff;
+ 	}
+
+ 	.container1 .box .content1 h3{
+ 		font-size: 20px;
+ 		margin: 20px 20px;
+ 		padding: 2px;
+ 		font-family: sans-serif;
+ 	}
+ 	.container1 .box .content1 p{
+ 		margin: 0;
+ 		padding: 0;
+	font-family: sans-serif;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+ 	.image{
+ 		width: 300px;
+ 		height: 200px;
+ 		position: relative;
+ 		z-index: 1;
+	transition: 0.5s;
+ 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bodyA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 20vh;
+	}
+	.containerA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerA .boxA{
+	position: relative;
+	width: 990px;
+	height: 300px;
+	padding: 5px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:20px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerA .boxA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerA .boxA .iconA{
+position: relative;
+margin-top: 20px;
+width: 720px;
+height: 50px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 20px;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerA .boxA:nth-child(1) .iconA{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+.containerA .boxA:nth-child(1):hover .iconA{
+box-shadow: 0 0 0 500px #45a29e;
+}
+.containerA .boxA .contentA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+
+
+
+ .containerA .boxA:hover .contentA {
+color: #fff;
+ 	}
+
+ 	.containerA .boxA .contentA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerA .boxA .contentA p{
+ 		margin: 0;
+ 		padding: 0;
+		font-family: sans-serif;
+		font-size: 20px;
+ 	}
+
+
+.body11{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+	}
+	.container11{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.container11 .box11{
+	position: relative;
+	width: 185px;
+	height: 250px;
+	padding: 2px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.container11 .box11:before{
+content:'';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.container11 .box11 .icon11{
+position: relative;
+width: 100px;
+height: 30px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 30px;
+border-radius: 20%;
+font-size: 20px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+	.container11 .box11:nth-child(1) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(1):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(2) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(2):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(3) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(3):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(4) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(4):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11:nth-child(5) .icon11{
+box-shadow: 0 0 0 0 #45a29e;
+background: #45a29e;
+}
+
+.container11 .box11:nth-child(5):hover .icon11{
+box-shadow: 0 0 0 400px #45a29e;
+
+}
+.container11 .box11 .content11 {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+}
+.container11 .box11 .content11 a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+font-family: sans-serif;
+font-size: 14px;
+}
+ .container11 .box11:hover .content11 {
+color: #fff;
+
+
+ 	}
+
+ 	.container11 .box11 .content11 h3{
+ 		
+ 		
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.container11 .box11 .content11 p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 14px;
+ 	}
+ 	a{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #fff;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #000;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 9 2px 5px rgba(0,0,0,.2);
+ 	}
+ 	a:hover{
+ 		display: inline-block;
+ 		padding: 10px 20px;
+ 		background: #000;
+ 		border-radius: 4px;
+ 		text-decoration: none;
+ 		color: #fff;
+ 		font-weight: 500;
+ 		margin-top: 20px;
+ 		box-shadow: 0 0 0 1px; #45a29e;
+ 	}
+
+
+
+ 	
+ 	.bodyAA{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #F0F8FF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 5vh;
+	}
+	.containerAA{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.containerAA .boxAA{
+	position: relative;
+	width: 100%;
+	height: 370px;
+	background:#F0F8FF;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin:5px;
+	box-sizing:border-box;
+	overflow: hidden;
+	text-align: justify;
+}
+.containerAA .boxAA:before{
+content:'';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255,255,255,.2);
+z-index: 2;
+pointer-events: none;
+	}
+.containerAA .boxAA .iconAA{
+position: relative;
+width: 170px;
+height: 40px;
+color:#fff;
+background:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 30px;
+border-radius: 20px;
+font-size: 30px;
+font-weight: 700;
+transition: 1s;
+font-family: sans-serif;
+	}
+.containerAA .boxAA:nth-child(1) .iconAA{
+box-shadow: 0 0 0 0 #1f2833;
+background: #1f2833;
+}
+.containerAA .boxAA:nth-child(1):hover .iconAA{
+box-shadow: 0 0 0 800px #1f2833	;
+}
+.containerAA .boxAA .contentAA {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+	font-family: sans-serif;
+}
+
+
+
+ .containerAA .boxAA:hover .contentAA {
+color: #fff;
+ 	}
+
+ 	.containerAA .boxAA .contentAA h3{
+ 		font-size: 40px;
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		font-family: sans-serif;
+ 	}
+ 	.containerAA .boxAA .contentAA p{
+ 		margin: 0;
+ 		padding: 0;
+font-family: sans-serif;
+font-size: 20px;
+ 	}
+ 	.logo1{
+ 		width: 400px;
+ 		height: 70px;
+ 	}
+</style>
+<body>
+	<div class="body1">
+	<table class="table">
+		<tr>
+			<td class="td"><center>
+			<img src="images/logo.png" class="logo1">
+			<td class="td"><center>
+				</td><center>
+			<th class="th"><a href="Home.html" class="links">HOME
+			</a></th><center>
+			<th class="th"><a href="About.html" class="links">ABOUT US
+			</a></th><center>
+			<th class="th"><a href="Product.html" class="links">PRODUCT
+			</a></th><center>
+			<th class="th"><a href="services.html" class="links">SERVICES
+			</a></th><center>
+			</td>
+			<th class="th"><a href="News.html" class="links">NEWS
+			</a></th><center>
+			</td>
+			<th class="th"><a href="Contacts.html#contact" class="links" >CONTACT
+			</a></th><center>
+			<th  width="3%" align="center">
+		</th>
+		</tr>
+	</table>
+</div>
+	<div class="body1">
+<div class="container">
+	<div class="slider">
+		<div class="slide slide1">
+			<div class="caption">
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="caption">
+
+				<h2>SHACMAN X3000 Cummins Tractor Strongly Landed in Cebu Market of Philippines</h2>
+				<p>Cebu in the Philippines is located in the center of the Visaya Islands and radiates to areas such as Iroylo, Bacolod and Surigo and Kagayan in northern Mindanao. Apart from Manila, it is one of the most important choices for local and surrounding customers to buy heavy duty vehicles.
+					<br><a href="News.html#news3" class="th1">Read More</a></p>
+			</div>
+		</div><div class="slide slide1">
+			<div class="caption">
+
+				<h2>Celebrating the 70th anniversary of The People's Republic of China</h2>
+				<p>Tiananmen Square, Beijing, October 1, 2019 The sky is clear, the autumn is cool, the sword is like the rainbow, the military power is vast. Celebrating the 70th anniversary of The People's Republic of China!
+					<br><a href="News.html#news1" class="th1">Read More</a></p>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="caption">
+
+				<h2>Malaysia H3000 promotion</h2>
+				<p>Recently, SHACMAN and Hong Seng Assembly Sdn Bhd Company of Malaysia successfully held SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification, laying a solid foundation for the next large-scale promotion.
+					<br><a href="News.html#news2" class="th1">Read More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="body">
+<div class="container1">
+		<div class="box">
+		<div class="icon">XCMG</div>
+		<div class="content1">
+			<center><h3>Latest Update</h3></center>
+			<p>&nbsp;&nbsp;&nbsp;Ranking the first in the crane industry for 15 years, XCMG has an "insatiable" desire for improvement. 1 Great XCMG CranesIn the first half of this year, market sales and revenue of XCMG cranes realized a significant year-on-year growth. The market share remained stable at high level of 50%. </p>
+			<center><a href="http://www.xcmg.com/en-ap/" target="_blank">View Site</a></center>
+		</div>
+	</div>
+		<div class="box">
+		<div class="icon">SHACMAN</div>
+		<div class="content1">
+			<center><h3>Latest Update</h3></center>
+			<p>&nbsp;&nbsp;&nbsp;
+			Recently, SHACMAN H3000 series product marketing promotion. This event enables customers to have a deeper understanding of SHACMAN brand awareness and product diversification laying a solid foundation for the next large-scale promotion. </p>
+			<center><a href="http://www.shacman.com/"target="_blank">View Site</a></center>
+		</div>
+		</div>
+		<div class="box">
+		<div class="icon">CHL</div>
+		<div class="content1">
+			<center><h3>Latest Update</h3></center>
+			<p>&nbsp;&nbsp;&nbsp;During 19 to 23 May, CHL first time paticipated CeMAT, which is also first time CHL offically face to customer allover the world, and have a successful effort.  With more than 500 customers visited our booth, over 60 distributors were interested in our products, and talked about cooperation. </p>
+			<center><a href="http://www.chlforklift.com/" target="_blank">View Site</a>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="bodyA">
+			<div class="containerA">
+				<div class="boxA">
+		<div class="iconA">WELCOME TO HD MEGATRUCKS & EQUIPMENT</div>
+		<div class="contentA">
+			<center><h3> </h3></center>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aims to lead and to be the Number 1 Distributor for Industry lines of Infrastructures, Constructions, Mining, supplying to Rentals, Warehousing, Trucking and Logistics of Heavy Trucks, Equipment and Material Handling in the entire Philippines.
+
+One of our main focus would be of an after-sales, having deep roots and experience of parts distribution which gives us an advantage on being able to focus on after sales support.
+
+Minimising time off the road by ensuring correct repairs and preventative maintenance whick minimises overall fuel and maintenance costs per kilometers. This avoids costly repairs later which are key to getting the most return from your truck.
+ </p>
+			<center><a href="About.html">Learn More</a></center>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="bodyAA">
+<div class="containerAA">
+		<div class="boxAA">
+<div class="iconAA">SERVICES</div>
+
+	<div class="body11">
+	<div class="container11">
+			<div class="box11">
+			<div class="icon11">SALES</div>
+			<div class="content11">
+				<center><h3></h3>
+				<p>Big Machinery (Sawa Group)<br>Boomtrux, Inc<br>Artic Machinery LTD.</center></p>
+			<center><a href="services.html#sales">Read More</a></center>
+		</div></div>
+		<div class="box11">
+		<div class="icon11">PARTS</div>
+		<div class="content11">
+			<center><h3> </h3></center>	
+			<p>&nbsp;&nbsp;&nbsp For any of your needs please contact with your local dealer.
+    Our dealer will response to you in shortest time.</p>
+			<center><a href="services.html#parts">Read More</a></center>
+		</div>
+		</div>
+		<div class="box11">
+		<div class="icon11">TECH</div>
+		<div class="content11">
+			<center><h3> </h3></center>
+			<p>&nbsp;&nbsp;&nbsp;The general assembly workshop is constructed with space truss steel structure, with a floor space of 55,700 square meters.  </p>
+			<center><a href="services.html#tech">Read More</a></center>
+		</div>
+		</div>
+		<div class="box11">
+		<div class="icon11">REPAIR</div>
+		<div class="content11">
+			<center><h3> </h3></center>
+			<p>&nbsp;&nbsp;&nbsp;For any of your needs please contact with your local dealer.
+    Our dealer will response to you in shortest time. </p>
+			<center><a href="services.html#repair">Read More</a></center>
+		</div>
+		</div>
+		<div class="box11">
+		<div class="icon11">SERVICE</div>
+		<div class="content11">
+			<center><h3> </h3></center>
+			<center><p>Pre-Sale Service<br><br>During Sale Service<br><br>After-Sale Service </p>
+			<center><a href="services.html#service">Read More</a></center>
+		</div>
+		</div>
+	</div>
+</div>
+</div></div></div></div>
+</body>
+</html>

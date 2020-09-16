@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FamAlbum</title>
+</head>
+<style>
+  
+    body {
+        background-color: #e2d1c3;
+      }
+    table {
+      position: relative;
+    }
+   .table {
+      
+        position:relative;
+      }
+   .td3 {
+      width: 30px;
+      height: 50px;
+      font-size: 22px;
+      background-color: #50c9c3;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+     font-weight: bolder;
+     letter-spacing: 5px;
+    }
+    .td3 a {
+      width: 30px;
+      height: 50px;
+      font-size: 22px;
+      background-color: #50c9c3;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+     font-weight: bolder;
+     letter-spacing: 5px;
+     text-decoration: none;
+    }
+    .td3:hover a {
+      width: 30px;
+      height: 50px;
+      font-size: 22px;
+      background-color: #50c9c3;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #FFFFFF;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+     font-weight: bolder;
+     letter-spacing: 5px;
+     text-decoration: none;
+    }
+    .td4 {
+      width: 30px;
+      height: 100px;
+      font-size: 22px;
+      padding: 10px;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-right: 1px;
+     background-color: #50c9c3;
+     font-weight: bolder;
+     letter-spacing: 5px;
+
+
+    }
+    .td7 {
+      width: 30px;
+      height: 100px;
+      font-size: 22px;
+      padding: 15px;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-right: 1px;
+     background-color: #50c9c3;
+     font-weight: bolder;
+     letter-spacing: 5px;
+border-bottom-left-radius: 15px;
+       border-top-left-radius: 25px;
+
+    }
+    .td6 {
+      width: 30px;
+      height: 10px;
+      font-size: 22px;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-right: 1px;
+      background-color: #50c9c3;
+      border-bottom-right-radius: 15px;
+     font-weight: bolder;
+     letter-spacing: 5px;
+      padding: 15px;
+
+    }
+    .td8 {
+      width: 30px;
+      height: 10px;
+      font-size: 22px;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: #000000;
+      border-right: 1px;
+      background-color: #50c9c3;
+      
+     font-weight: bolder;
+     letter-spacing: 5px;
+      padding: 15px;
+    }
+    .td2 {
+      width: 400px;
+      height: 230px;
+      font-size: 16px;
+      background-color: #50c9c3;
+      text-align: center;
+      position: relative;
+      border-bottom-left-radius: 20px;
+      text-align: justify;
+      padding-right:20px;
+      padding-left:20px;
+      word-spacing: 3px;
+      }
+      .td9 {
+      width: 400px;
+      height: 230px;
+      font-size: 16px;
+      background-color: #50c9c3;
+      text-align: center;
+      position: relative;
+      border-bottom-right-radius: 20px;
+      text-align: justify;
+      padding-right:20px;
+      padding-left:20px;
+      word-spacing: 3px;
+      }
+      .td5 {
+      width: 300px;
+      height: 200px;
+      font-size: 16px;
+      background-color: #50c9c3;
+      text-align: center;
+      position: relative;
+      border-bottom-left-radius: 100px;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+.td9:hover {
+      background-color: #e2d1c3;
+    }
+ .td2:hover {
+      background-color: #e2d1c3;
+    }
+    .font:hover{
+      background-color: #50c9c3;
+    }
+    .hr {
+      background-color: #50c9c3;
+
+    }
+    .hr:hover{
+      background-color: #e2d1c3;
+    }
+      .image {
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+ 
+      
+      }
+
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        
+      }
+
+      .image:hover {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 1;
+      }
+      .text {
+        background-color: #50c9c3;
+        color: white;
+        font-size: 20px;
+        padding: 10px 22px;
+        font-weight: bolder;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+       .image1 {
+        border: 1px solid #ddd;
+       border-radius: 10px;
+        width: 380px;
+        height: 350px;
+       background-color: #50c9c3;
+       position: relative;
+      
+      }
+
+ .image2 {
+        border: 1px solid #ddd;
+       border-radius: 10px;
+        width: 650px;
+        height: auto;
+       background-color: #50c9c3;
+       position: relative;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      }
+    .image3 {
+        border: 1px solid #ddd;
+       border-radius: 10px;
+        width: 100px;
+        height: 200px;
+       background-color: #50c9c3;
+        margin-right: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+       margin-left: 0px;
+      }
+      .middle1 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+  
+      .image1:hover {
+        opacity: 1.3;
+      }
+
+      .container:hover .middle1 {
+        opacity: 1;
+      }
+      .text1 {
+        background-color: #50c9c3;
+        color: white;
+        font-size: 14px;
+        padding: 5px 5px;
+        font-weight: bolder;
+        text-align: center;
+      }
+       .text1 a {
+        background-color: #50c9c3;
+        color: white;
+        font-size: 14px;
+        padding: 5px 5px;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: none;
+        line-height: 20px;
+        text-align: center;
+        align-content: center;
+      }
+      .links  {
+              color: black;
+              text-decoration: none;
+              font-size: 25px;
+              text-align: center;
+            }
+       .font{ 
+         width: 500px;
+         height: 100px;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      text-align: center;
+      font-weight: bolder;
+      background-color: #50c9c3;
+       
+     }
+    
+</style>
+<body>
+  <div class="container"><IMG SRC = "3.jpg" class="image"><hr class="hr">
+  <div class="middle">
+  <div class="text">TECHNOKIDS SEMINAR</div></div></div>
+
+<table align="left" >
+    <tr>
+      <td class="td3" colspan="2"><a href="Interest.html" target="btmRow">Robitics w/ Sir Gilbs</a></td>
+    </tr>
+    <tr>
+       <td class="td4"  rowspan="1"><IMG SRC = "special1.jpg" class="image2"></td>
+        <td class="td4"  rowspan="1"><IMG SRC = "special2.jpg" class="image2"></td> 
+    
+ 
+   </tr>
+  </table>
+
+</body>
+</html>
